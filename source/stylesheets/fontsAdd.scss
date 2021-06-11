@@ -1,0 +1,10 @@
+@import "mixin";
+
+
+@include font-face-new('NeutrafaceCondensed', 'NeutrafaceCondensed-Medium');
+@include font-face-new('NeutrafaceCondensed', 'NeutrafaceCondensed-Bold');
+@include font-face-new('NeutrafaceCondensed', 'NeutrafaceCondensedMediumFin');
+
+@include font-face-new('FuturaPT', 'FuturaPT-Book');
+@include font-face-new('FuturaPT', 'FuturaPT-Demi');
+@include font-face-new('FuturaPT', 'FuturaPT-Bold');

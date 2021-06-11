@@ -1,0 +1,21 @@
+@import "normalize";
+@import "base";
+
+@import "fontsAdd";
+
+@import "mobile";
+@import "tablet";
+
+
+
+
+
+
+@media screen and (min-width: 850px){
+    
+
+
+  .item_tablet, .item_mob{
+    display: none !important;
+  }
+}

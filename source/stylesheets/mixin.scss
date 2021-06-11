@@ -1,0 +1,17 @@
+@mixin font-face-new($fontFamily, $fontFamilyStyle) {
+  @font-face {
+    font-family: "#{$fontFamilyStyle}";
+    src: font-url("#{$fontFamily}/#{$fontFamilyStyle}/#{$fontFamilyStyle}.woff") format("woff"),
+        font-url("#{$fontFamily}/#{$fontFamilyStyle}/#{$fontFamilyStyle}.woff2") format("woff2"),
+        font-url("#{$fontFamily}/#{$fontFamilyStyle}/#{$fontFamilyStyle}.svg") format("svg");
+
+    font-display: swap;
+  }
+}
+
+
+@function get-vw($fontSize, $vw-viewport) {
+  $vw-context: $vw-viewport * 0.01 * 1px;
+  @return $fontSize / $vw-context * 1vw;
+  @return $fontSize;
+}
